@@ -1,0 +1,92 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global colors */
+:root {
+  --primary: #3b82f6; /* blue-500 */
+  --primary-hover: #2563eb; /* blue-600 */
+  --secondary: #f1f5f9; /* slate-100 */
+  --accent: #10b981; /* emerald-500 */
+  --background: #f8fafc; /* slate-50 */
+  --foreground: #1e293b; /* slate-800 */
+  --card: #ffffff;
+  --card-foreground: #1e293b; /* slate-800 */
+  --border: #e2e8f0; /* slate-200 */
+  --input: #e2e8f0; /* slate-200 */
+  --ring: #3b82f6; /* blue-500 */
+  --radius: 0.5rem;
+}
+
+/* Typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+/* Cards */
+.card {
+  background-color: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-weight: 500;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Progress Bar Styles */
+.progress-container {
+  height: 0.5rem;
+  background-color: var(--secondary);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 9999px;
+}
+
+/* Custom utility classes */
+.linguaspark-primary {
+  color: var(--primary);
+}
+
+.bg-linguaspark-primary {
+  background-color: var(--primary);
+}
+
+.bg-linguaspark-light {
+  background-color: #dbeafe; /* blue-100 */
+}
+
+.border-linguaspark-primary {
+  border-color: var(--primary);
+}
+
+.text-linguaspark-primary {
+  color: var(--primary);
+}
+
+.hover\:bg-linguaspark-primary:hover {
+  background-color: var(--primary);
+}
+
+.hover\:text-linguaspark-primary:hover {
+  color: var(--primary);
+} 
