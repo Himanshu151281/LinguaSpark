@@ -4,6 +4,8 @@
 
 This is a language learning platform that helps users learn new languages with AI assistance.
 
+## Live Link - https://bigbits.netlify.app/
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
